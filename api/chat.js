@@ -64,7 +64,7 @@ export default async function handler(req, res) {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${apiKey}`,
-        'HTTP-Referer': 'https://duannealava.vercel.app', // update to your actual domain
+        'HTTP-Referer': 'https://dwynndev.vercel.app', // update to your actual domain
         'X-Title': 'DuanneBot — Portfolio Assistant',
       },
       body: JSON.stringify({
