@@ -68,7 +68,7 @@ export default async function handler(req, res) {
         'X-Title': 'DuanneBot — Portfolio Assistant',
       },
       body: JSON.stringify({
-        model: 'meta-llama/llama-guard-4-12b',
+        model: 'meta-llama/llama-guard-4-12b:free',
         max_tokens: 1000,
         messages: fullMessages,
       }),
