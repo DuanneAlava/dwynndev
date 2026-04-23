@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duanne Harold S. Alava — Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          },
+          colors: {
+            ink: '#0D0D0F',
+            paper: '#F5F2EC',
+            accent: '#E8FF47',
+            muted: '#6B6B6B',
+            card: '#161619',
+            border: '#2A2A2F',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-logo">DwynnDev<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get in Touch</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── Main Content ── -->
+<main>
+
+  <!-- ── Hero ── -->
+  <section id="home" class="hero" aria-label="Introduction">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">Open to Opportunities</div>
+        <h1 class="hero-name">
+          Hi, I'm<br>
+          <span class="line2">Duanne</span>
+        </h1>
+        <p class="hero-subtitle">
+          <strong>Frontend Developer & Digital Illustrator</strong> — driven by innovative thinking to create remarkable digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">5+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">7+</div>
+            <div class="stat-label">Tech Skills</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3rd Yr</div>
+            <div class="stat-label">BSIT Student</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="avatar-frame">
+          <div class="avatar-bg">
+            <!-- Replace src with your actual photo path -->
+            <img src="my-portfolio-photo.jpg"
+              alt="Duanne Harold S. Alava — Frontend Developer and Digital Illustrator"
+              style="width:100%;height:100%;object-fit:cover;border-radius:3px;"
+              onerror="this.style.display='none';document.getElementById('avatar-placeholder').style.display='flex'">
+          </div>
+          <div class="avatar-badge">BSIT · Student</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="section-wrap">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-eyebrow reveal">Who I Am</p>
+          <h2 class="section-title reveal" id="about-heading">Building Tomorrow's<br>Digital Solutions</h2>
+          <div class="section-divider reveal"></div>
+          <div class="reveal">
+            <p>I'm <strong>Duanne Harold S. Alava</strong>, 20 years old and currently in my 3rd year of Bachelor of Science in Information Technology at Our Lady of Lourdes College Foundation Inc.</p>
+            <p>This portfolio reflects my professional preparation and creative ambitions. Aspiring to specialize in <strong>Python automation</strong>, I merge technical precision with design sensibility — bridging code and creativity.</p>
+            <p>My work spans frontend development, systems design, digital illustration, and an ever-growing curiosity about AI-integrated tools and logistics tech.</p>
+          </div>
+          <div class="edu-card reveal" aria-label="Education details">
+            <div class="edu-card-label">
+              <i class="ph-bold ph-graduation-cap" style="margin-right:0.4rem;"></i>Currently Studying
+            </div>
+            <div class="edu-card-school">Our Lady of Lourdes College Foundation Inc.</div>
+            <div class="edu-card-course">BS Information Technology — 3rd Year</div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <p class="section-eyebrow">What I Do</p>
+          <h3 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:-0.02em;margin-bottom:1rem;">Areas of Expertise</h3>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div class="edu-card" style="margin-top:0;">
+              <div style="font-size:1.4rem;margin-bottom:0.5rem;color:var(--accent);" aria-hidden="true"><i class="ph-bold ph-pencil-ruler"></i></div>
+              <div class="edu-card-school" style="font-size:0.95rem;">Digital Illustration</div>
+              <div class="edu-card-course">Creating visual assets and UI illustrations with creative flair.</div>
+            </div>
+            <div class="edu-card" style="margin-top:0;">
+              <div style="font-size:1.4rem;margin-bottom:0.5rem;color:var(--accent);" aria-hidden="true"><i class="ph-bold ph-code"></i></div>
+              <div class="edu-card-school" style="font-size:0.95rem;">Frontend Development</div>
+              <div class="edu-card-course">Building responsive, performant web interfaces with modern tooling.</div>
+            </div>
+            <div class="edu-card" style="margin-top:0;">
+              <div style="font-size:1.4rem;margin-bottom:0.5rem;color:var(--accent);" aria-hidden="true"><i class="ph-bold ph-robot"></i></div>
+              <div class="edu-card-school" style="font-size:0.95rem;">Python Automation</div>
+              <div class="edu-card-course">Scripting smart workflows and aspiring AI-powered integrations.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">Capabilities</p>
+      <h2 class="section-title reveal" id="skills-heading">Skills & Technologies</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="skills-grid reveal" role="list" aria-label="Core skills">
+        <div class="skill-cell" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="ph-bold ph-monitor"></i></div>
+          <div class="skill-name">Frontend Dev</div>
+          <div class="skill-desc">Building polished, responsive interfaces that delight users.</div>
+        </div>
+        <div class="skill-cell" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="ph-bold ph-paint-brush"></i></div>
+          <div class="skill-name">UX/UI Design</div>
+          <div class="skill-desc">User-centered design thinking with a visual flair.</div>
+        </div>
+        <div class="skill-cell" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="ph-bold ph-gear-six"></i></div>
+          <div class="skill-name">System Dev</div>
+          <div class="skill-desc">Architecting functional software systems from ground up.</div>
+        </div>
+        <div class="skill-cell" role="listitem">
+          <div class="skill-icon" aria-hidden="true"><i class="ph-bold ph-chats"></i></div>
+          <div class="skill-name">Communication</div>
+          <div class="skill-desc">Translating technical concepts for any audience.</div>
+        </div>
+      </div>
+
+      <h3 class="reveal" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;margin-top:2.5rem;margin-bottom:0.25rem;">Languages</h3>
+      <div class="tech-pills reveal" role="list" aria-label="Programming languages">
+        <span class="pill" role="listitem">HTML5</span>
+        <span class="pill" role="listitem">CSS3</span>
+        <span class="pill" role="listitem">JavaScript</span>
+        <span class="pill" role="listitem">Java</span>
+        <span class="pill" role="listitem">Python</span>
+        <span class="pill" role="listitem">C++</span>
+        <span class="pill" role="listitem">MySQL</span>
+      </div>
+
+      <h3 class="reveal" style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;margin-top:1.5rem;margin-bottom:0.25rem;">Frameworks & Tools</h3>
+      <div class="tech-pills reveal" role="list" aria-label="Frameworks and tools">
+        <span class="pill" role="listitem">React</span>
+        <span class="pill" role="listitem">Node.js</span>
+        <span class="pill" role="listitem">Laravel</span>
+        <span class="pill" role="listitem">Tailwind CSS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects" aria-labelledby="projects-heading">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">What I've Built</p>
+      <h2 class="section-title reveal" id="projects-heading">Featured Projects</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="projects-grid">
+
+        <article class="project-card reveal" aria-labelledby="proj-payroll">
+          <div class="project-thumb" aria-hidden="true" style="background:linear-gradient(135deg,#0d1117,#1a2233);">
+            <i class="ph-bold ph-receipt"></i>
+          </div>
+          <span class="project-type">System</span>
+          <div class="project-body">
+            <h3 class="project-title" id="proj-payroll">Employee Attendance & Payroll System</h3>
+            <p class="project-desc">A full-featured HR system that automates attendance tracking and payroll computation — reducing manual errors and saving administrative time.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Executable</span>
+              <span class="project-tag">System Design</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" aria-labelledby="proj-atm">
+          <div class="project-thumb" aria-hidden="true" style="background:linear-gradient(135deg,#0d1117,#1a1a2e);">
+            <i class="ph-bold ph-currency-circle-dollar"></i>
+          </div>
+          <span class="project-type">Simulation</span>
+          <div class="project-body">
+            <h3 class="project-title" id="proj-atm">ATM Simulation System</h3>
+            <p class="project-desc">A Java console application simulating core ATM operations — account management, balance inquiry, deposits, withdrawals, and PIN authentication.</p>
+            <div class="project-tags">
+              <span class="project-tag">Java</span>
+              <span class="project-tag">OOP</span>
+              <span class="project-tag">Console App</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" aria-labelledby="proj-moon">
+          <div class="project-thumb" aria-hidden="true" style="background:linear-gradient(135deg,#0d0d1a,#0a0a2e);">
+            <i class="ph-bold ph-shooting-star"></i>
+          </div>
+          <span class="project-type">Game</span>
+          <div class="project-body">
+            <h3 class="project-title" id="proj-moon">Moon Shooter</h3>
+            <p class="project-desc">An arcade-style space shooter game where a spaceship must shoot down a firing moon. Survive the onslaught and rack up the highest score possible.</p>
+            <div class="project-tags">
+              <span class="project-tag">Game Dev</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Canvas</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" aria-labelledby="proj-lootech">
+          <div class="project-thumb" aria-hidden="true" style="background:linear-gradient(135deg,#0d1a0d,#1a2e1a);">
+            <i class="ph-bold ph-shopping-cart"></i>
+          </div>
+          <span class="project-type">Web App</span>
+          <div class="project-body">
+            <h3 class="project-title" id="proj-lootech">LooTech</h3>
+            <p class="project-desc">An e-commerce platform specializing in gaming and professional computer devices — featuring product listings, cart management, and a modern storefront UI.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">E-Commerce</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal" aria-labelledby="proj-larga">
+          <div class="project-thumb" aria-hidden="true" style="background:linear-gradient(135deg,#1a0d00,#2e1a00);">
+            <i class="ph-bold ph-truck"></i>
+          </div>
+          <span class="project-type">Platform · Startup</span>
+          <div class="project-body">
+            <h3 class="project-title" id="proj-larga">Larga.ph</h3>
+            <p class="project-desc">An AI-powered logistics and market platform connecting Filipino farmers and truckers — streamlining transport to reduce post-harvest losses of fruits and vegetables.</p>
+            <div class="project-tags">
+              <span class="project-tag">AI-Powered</span>
+              <span class="project-tag">Logistics</span>
+              <span class="project-tag">AgriTech</span>
+              <span class="project-tag">Startup</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact" style="background:rgba(255,255,255,0.015);" aria-labelledby="contact-heading">
+    <div class="section-wrap">
+      <p class="section-eyebrow reveal">Let's Work Together</p>
+      <h2 class="section-title reveal" id="contact-heading">Get in Touch</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="contact-grid">
+        <div class="contact-form reveal" role="form" aria-label="Contact form">
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Your Name</label>
+            <input type="text" id="contact-name" class="form-input" placeholder="Juan Dela Cruz" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email Address</label>
+            <input type="email" id="contact-email" class="form-input" placeholder="juan@example.com" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="contact-subject" class="form-label">Subject</label>
+            <input type="text" id="contact-subject" class="form-input" placeholder="Project Collaboration">
+          </div>
+          <div class="form-group">
+            <label for="contact-msg" class="form-label">Message</label>
+            <textarea id="contact-msg" class="form-textarea" placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button type="button" class="form-submit" onclick="handleFormSubmit()">Send Message →</button>
+        </div>
+
+        <div class="contact-info reveal">
+          <p style="color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">
+            Open to freelance projects, collaborations, and internship opportunities. Let's build something remarkable together.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="ph-bold ph-envelope"></i></div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">alavaduanneharold@email.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="ph-bold ph-map-pin"></i></div>
+            <div>
+              <div class="contact-detail-label">Location</div>
+              <div class="contact-detail-value"><a href="https://www.google.com/maps/place/Canapawan,+Labo,+Camarines+Norte">
+                Philippines <i class="ph-bold ph-flag" style="color:var(--accent);vertical-align:middle;font-size:0.9em;"></i></a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="ph-bold ph-github-logo"></i></div>
+            <div>
+              <div class="contact-detail-label">GitHub</div>
+              <div class="contact-detail-value"><a href="https://github.com/DuanneAlava">github.com/DuanneAlava</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="ph-bold ph-linkedin-logo"></i></div>
+            <div>
+              <div class="contact-detail-label">LinkedIn</div>
+              <div class="contact-detail-value"><a href="https://www.linkedin.com/in/duanne-harold-alava-b98294347/">Duanne Harold Alava</a></div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true"><i class="ph-bold ph-circle-wavy-check"></i></div>
+            <div>
+              <div class="contact-detail-label">Status</div>
+              <div class="contact-detail-value" style="color:#4ade80;">Available for Projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer role="contentinfo">
+  <p>© 2026 <span>Duanne Harold S. Alava</span>. Built with passion & code.
+    <i class="ph-bold ph-flag" style="color:var(--accent);vertical-align:middle;"></i>
+  </p>
+</footer>
+
+<!-- ── Chatbot ── -->
+<div class="chatBot" aria-label="AI Portfolio Assistant">
+  <button class="chatbot-trigger" id="chatbot-trigger" aria-label="Open portfolio assistant" aria-expanded="false">
+    <i class="ph-bold ph-chat-circle-dots"></i>
+  </button>
+
+  <div class="chatbot-panel" id="chatbot-panel" role="dialog" aria-modal="true" aria-label="Portfolio Assistant">
+    <div class="chatbot-header">
+      <div class="chatbot-avatar" aria-hidden="true"><i class="ph-bold ph-robot"></i></div>
+      <div class="chatbot-header-info">
+        <div class="chatbot-name">Weyni</div>
+        <div class="chatbot-status">Online — Ask me anything!</div>
+      </div>
+      <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">✕</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatbot-messages" aria-live="polite" aria-label="Chat messages">
+      <div class="msg msg-bot">
+        <i class="ph-bold ph-hand-waving" style="color:var(--accent);margin-right:0.25rem;"></i>
+        Hi there! I'm <strong>Weyni</strong>, Duanne's portfolio assistant. Ask me about his skills, projects, background, or how to get in touch!
+      </div>
+    </div>
+
+    <div class="quick-replies" id="quick-replies" aria-label="Quick reply options">
+      <button class="qr-btn" onclick="sendQuick('What are Duanne\'s skills?')"><i class="ph-bold ph-wrench"></i> Skills</button>
+      <button class="qr-btn" onclick="sendQuick('Tell me about his projects')"><i class="ph-bold ph-rocket-launch"></i> Projects</button>
+      <button class="qr-btn" onclick="sendQuick('What is his background?')"><i class="ph-bold ph-user"></i> Background</button>
+      <button class="qr-btn" onclick="sendQuick('How can I contact Duanne?')"><i class="ph-bold ph-paper-plane-tilt"></i> Contact</button>
+    </div>
+
+    <div class="chatbot-input-area">
+      <input type="text" class="chatbot-input" id="chatbot-input"
+        placeholder="Ask about Duanne..." aria-label="Chat message input"
+        onkeydown="if(event.key==='Enter')sendMessage()">
+      <button class="chatbot-send" onclick="sendMessage()" aria-label="Send message">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 12L22 2L14 22L11 13L2 12Z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts — loaded at end of body so DOM is ready -->
+<script src="main.js"></script>
+
+</body>
+</html>
